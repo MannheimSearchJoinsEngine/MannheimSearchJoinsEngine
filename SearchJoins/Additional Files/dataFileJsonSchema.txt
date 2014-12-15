@@ -1,0 +1,9 @@
+{
+	"_id": 0, //unusable id
+	"ID": "10408260_0_4621037168257678540.csv", //the name of the csv file
+	"rowID": 4, // the absolute number of the row
+	//follows the columns: "columnName":"columnValue"
+	"": "&nbsp;",
+	"null": null,
+	"apparel": "chains"
+}

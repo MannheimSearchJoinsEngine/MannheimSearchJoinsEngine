@@ -1,0 +1,103 @@
+{
+	"type": "object",
+	"$schema": "http://json-schema.org/draft-03/schema",
+	"id": "http://jsonschema.net",
+	"required": false,
+	"properties": {
+		"ID": {
+			"type": "string",
+			"description": "The csv file name",
+			"id": "http://jsonschema.net/ID",
+			"required": false
+		},
+		"_id": {
+			"type": "number",
+			"description": "automatically generated ID, should not be used",
+			"id": "http://jsonschema.net/_id",
+			"required": false
+		},
+		"columns": {
+			"type": "array",
+			"id": "http://jsonschema.net/columns",
+			"required": false,
+			"items": {
+				"type": "object",
+				"id": "http://jsonschema.net/columns/0",
+				"required": false,
+				"properties": {
+					"name": {
+						"type": "string",
+						"description": "name of the column",
+						"id": "http://jsonschema.net/columns/0/name",
+						"required": false
+					},
+					"type": {
+						"type": "string",
+						"description": "type of the column",
+						"id": "http://jsonschema.net/columns/0/type",
+						"required": false
+					},
+					"tableIndex": {
+						"type": "number",
+						"description": "the position of the column inside the table (Starting with 0)",
+						"id": "http://jsonschema.net/columns/0/type",
+						"required": false
+					},
+					"graphMappedID": {
+						"type": "number",
+						"description": "the mapped id for the column inside the graph",
+						"id": "http://jsonschema.net/columns/0/type",
+						"required": false
+					}
+				}
+			}
+		},
+		"endingPos": {
+			"type": "string",
+			"description": "The endingposition of the table inside the html ",
+			"id": "http://jsonschema.net/endingPos",
+			"required": false
+		},
+		"nmCols": {
+			"type": "number",
+			"description": "number of columns in the file",
+			"id": "http://jsonschema.net/nmCols",
+			"required": false
+		},
+		"nmRows": {
+			"type": "number",
+			"description": "The number of rows inside the table",
+			"id": "http://jsonschema.net/nmRows",
+			"required": false
+		},
+		"primaryKey": {
+			"type": "array",
+			"description": "list of all primary key columns",
+			"id": "http://jsonschema.net/primaryKey",
+			"required": false,
+			"items": {
+				"type": "string",
+				"id": "http://jsonschema.net/primaryKey/0",
+				"required": false
+			}
+		},
+		"startingPos": {
+			"type": "string",
+			"description": "The starting position of the table inside the html ",
+			"id": "http://jsonschema.net/s tartingPos",
+			"required": false
+		},
+		"tld": {
+			"type": "string",
+			"description": "the tld of the web page",
+			"id": "http://jsonschema.net/tld",
+			"required": false
+		},
+		"url": {
+			"type": "string",
+			"description": "the url of the web page",
+			"id": "http://jsonschema.net/url",
+			"required": false
+		}
+	}
+}
